@@ -15,6 +15,7 @@
 
 
 关于一些阿里云需要的参数
+
 accessKey: 您的账号AccessKey ID,登录阿里云控制台，将光标移至账号头像上，然后单击accesskeys，跳转至用户信息管理页，即可获取。
 
 accessSecret: 您的账号AccessKey Secret。获取方式同accessKey。
