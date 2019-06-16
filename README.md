@@ -32,5 +32,9 @@ Main为启动类,里面有两个静态内部类(Init类,ForMessage类),这两个
 - Logger logger: slf4j,日志框架的一个门面,具体日志在这里使用了log4j,具体配置在log4j.properties中
 - String forwardUrl: 调用配置的需要转发到的url
 #### 静态方法main
-调用Init.init():初始化内部的所有静态字段
-调用Forward.forward(): 转发消息至调用者配置的url
+- 调用Init.init():初始化内部的所有静态字段
+- 调用Forward.forward(): 转发消息至调用者配置的url
+### Init 类
+具体不说明，请看相关注释
+### Forward 类
+具体不说明，请看相关注释
