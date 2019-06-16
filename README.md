@@ -6,9 +6,9 @@
 
 
 ## 使用方法
-直接下载message.jar
-用zip格式打开,编辑里面的myProp.properties文件
-最后运行 java -jar message.jar
+- 直接下载message.jar
+- 用zip格式打开,编辑里面的myProp.properties文件
+- 最后运行 java -jar message.jar
 
 
 
