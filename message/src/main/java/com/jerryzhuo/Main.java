@@ -59,11 +59,11 @@ public class Main {
          * @throws Exception
          */
         private static void checkConfig() throws Exception {
-            checkStringIfNullOrThrowException("accessKey为空", config.getProperty("accessKey"));
-            checkStringIfNullOrThrowException("accessSecret为空", config.getProperty("accessSecret"));
-            checkStringIfNullOrThrowException("regionId为空", config.getProperty("regionId"));
-            checkStringIfNullOrThrowException("uid为空", config.getProperty("uid"));
-            checkStringIfNullOrThrowException("url", config.getProperty("url"));
+            checkStringIfNullOrThrowException("accessKey is null", config.getProperty("accessKey"));
+            checkStringIfNullOrThrowException("accessSecret is null", config.getProperty("accessSecret"));
+            checkStringIfNullOrThrowException("regionId is null", config.getProperty("regionId"));
+            checkStringIfNullOrThrowException("uid is null", config.getProperty("uid"));
+            checkStringIfNullOrThrowException("url is null", config.getProperty("url"));
         }
 
         /**
@@ -108,8 +108,8 @@ public class Main {
             result.set("payload", new HttpEntity<>(new String(m.getPayload())));
             result.set("messageId", new HttpEntity<>(m.getMessageId()));
             result.set("topic", new HttpEntity<>(m.getTopic()));
-            result.set("generateTime", new HttpEntity<>(m.getGenerateTime()));
-            result.set("qos", new HttpEntity<>(m.getQos()));
+            result.set("generateTime", new HttpEntity<>(String.valueOf(m.getGenerateTime())));
+            result.set("qos", new HttpEntity<>(String.valueOf(m.getQos())));
 
             return result;
         }
